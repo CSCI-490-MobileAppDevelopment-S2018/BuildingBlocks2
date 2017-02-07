@@ -10,12 +10,15 @@
     tools:context="edu.cofc.buildingblocks2.MainActivity">
 
 
-
-    <Chronometer
-        android:id="@+id/chronometer"
+    <TextClock
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:format="Timer: %s"
         android:textSize="48dp"/>
+
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
