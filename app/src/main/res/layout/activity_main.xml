@@ -10,21 +10,12 @@
     tools:context="edu.cofc.buildingblocks2.MainActivity">
 
 
-    <RatingBar
-        android:id="@+id/ratebar1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:numStars="4"
-        android:stepSize=".25"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
 
-    <TextView
-        android:id="@+id/rating_text"
+    <Chronometer
+        android:id="@+id/chronometer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/ratebar1"
-        android:layout_marginTop="86dp" />
+        android:format="Timer: %s"
+        android:textSize="48dp"/>
 
 </RelativeLayout>
