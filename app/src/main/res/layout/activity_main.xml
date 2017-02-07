@@ -9,6 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="edu.cofc.buildingblocks2.MainActivity">
 
+
     <ProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
@@ -26,4 +27,6 @@
         android:max="100"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>
