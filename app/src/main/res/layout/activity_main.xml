@@ -10,23 +10,21 @@
     tools:context="edu.cofc.buildingblocks2.MainActivity">
 
 
-    <ProgressBar
-        android:id="@+id/progress_bar"
+    <RatingBar
+        android:id="@+id/ratebar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:max="100"
+        android:numStars="4"
+        android:stepSize=".25"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/progress_bar2"
-        android:layout_marginTop="109dp" />
+        android:layout_alignParentStart="true" />
 
-    <ProgressBar
-        android:id="@+id/progress_bar2"
+    <TextView
+        android:id="@+id/rating_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:max="100"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ratebar1"
+        android:layout_marginTop="86dp" />
 
 </RelativeLayout>

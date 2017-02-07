@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Window;
 import android.widget.ProgressBar;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,13 +15,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ProgressBar bar = (ProgressBar) findViewById(R.id.progress_bar);
-        bar.setProgress(75);
-
-        supportRequestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
-        supportRequestWindowFeature(Window.FEATURE_PROGRESS);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_progress);
+        RatingBar rate = (RatingBar) findViewById(R.id.ratebar1);
+        rate.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+                ((TextView) findViewById(R.id.rating_text)).setText("Rating: " + rating);
+            }
+        });
     }
 
 
